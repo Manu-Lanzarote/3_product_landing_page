@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header id="header">
+        <div class="top">
+            <img src="https://cdn.icon-icons.com/icons2/1637/PNG/256/atletico-madrid_109483.png" alt="Escudo del Atlético" class="logo"/>
+            <nav id="nav-bar">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#works" class="nav-link">How it works</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <legend>RECIBE LAS OFERTAS ESPECIALES PARA SOCIOS</legend>
+                <input type="email" id="t2" name="email" placeholder="Introduce tu correo electrónico" required title="Email incorrecto"
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+                <button type="submit" id="submit" onclick="enviar()">Enviar</button>
+            </form>
+        </section>
+        <section id="features"></section>
+        <section id="works">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/TQpaStDds88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="pricing"></section>
+    </main>
+    <footer>
+        
+    </footer>
+    <script>
+        function enviar(){
+            alert("Enviando el formulario")
+        }
+    </script>
+</body>
+</html>
