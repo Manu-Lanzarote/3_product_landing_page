@@ -6,40 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Product Landing Page</title>
+    <script
+      src="https://kit.fontawesome.com/4ff9607121.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
     <header id="header">
         <div class="top">
-            <img src="https://cdn.icon-icons.com/icons2/1637/PNG/256/atletico-madrid_109483.png" alt="Escudo del Atlético" class="logo"/>
+            <a href="#hero"><img src="https://cdn.icon-icons.com/icons2/1637/PNG/256/atletico-madrid_109483.png" alt="Escudo del Atlético" class="logo"/></a>
             <nav id="nav-bar">
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#works" class="nav-link">How it works</a>
-                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#equipo" class="nav-link">EQUIPO</a>
+                <a href="#somos" class="nav-link">SENTIMIENTO</a>
+                <a href="#trofeos" class="nav-link">VICTORIA</a>
             </nav>
         </div>
     </header>
     <main>
-        <section>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <legend>RECIBE LAS OFERTAS ESPECIALES PARA SOCIOS</legend>
-                <input type="email" id="t2" name="email" placeholder="Introduce tu correo electrónico" required title="Email incorrecto"
-                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
-                <button type="submit" id="submit" onclick="enviar()">Enviar</button>
-            </form>
+        <section class="hero" id="hero">
+            <div class="hero2">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <legend>OFERTAS EXCLUSIVAS PARA SOCIOS</legend>
+                    <div class="campos">
+                        <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" required title="Email incorrecto"
+                        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+                        <button type="submit" id="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </section>
-        <section id="features"></section>
-        <section id="works">
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/TQpaStDds88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section id="equipo" class="equipo">
+            <h2>EQUIPO</h2>
+            <br>
+            <div class="jugadores">
+                <div><i class="fas fa-futbol"></i></div>
+                <div>
+                    <h3>JOAO FÉLIX</h3>
+                    <p>Ex harum laudantium, dignissimos esse accusantium delectus, odio molestias voluptate omnis aperiam veniam, facere vel! Quaerat, nam! Ratione hic recusandae molestias voluptatibus. Qui dolores corrupti facere cum. Ratione hic recusandae molestias voluptatibus. Qui dolores corrupti facere cum.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="jugadores">
+                <div><i class="fas fa-trophy"></i></div>
+                <div>
+                    <h3>JAN OBLACK</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque maxime quibusdam similique consequatur necessitatibus sit eveniet suscipit dignissimos numquam amet.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="jugadores">
+                <div><i class="fas fa-running"></i></div>
+                <div>
+                    <h3>ÁNGEL CORREA</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione hic recusandae molestias voluptatibus. Qui dolores corrupti facere cum. Voluptates amet blanditiis inventore nobis? Quo, enim!</p>
+                </div>
+            </div>
+            <hr>
+            <div class="jugadores">
+                <div><i class="fas fa-futbol"></i></div>
+                <div>
+                    <h3>LUIS SUÁREZ</h3>
+                    <p>Ex harum laudantium, dignissimos esse accusantium delectus, odio molestias voluptate omnis aperiam veniam, facere vel! Quaerat, nam!</p>
+                </div>
+            </div>
+            <hr>
+            <div class="jugadores">
+                <div><i class="fas fa-trophy"></i></div>
+                <div>
+                    <h3>ANTOINE GRIZZMAN</h3>
+                    <p>Ex harum laudantium, dignissimos esse accusantium delectus, odio molestias voluptate omnis aperiam veniam, facere vel! Quaerat, nam! Ratione hic recusandae molestias voluptatibus. Qui dolores corrupti facere cum. Ratione hic recusandae molestias voluptatibus. Qui dolores corrupti facere cum.</p>
+                </div>
+            </div>
         </section>
-        <section id="pricing"></section>
+        <section id="somos" class="somos">
+            <div>
+                <h2>MOTIVOS DE UN SENTIMIENTO</h2>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, animi optio? Ullam, minus odio aut laborum quam rem dicta quaerat inventore harum porro recusandae vitae temporibus animi, iure sunt in dignissimos possimus. Voluptatem expedita consequatur optio cumque soluta, ab minima, distinctio corporis maiores, natus obcaecati ducimus quo eum voluptas vero enim! Aliquam rem animi soluta dolores libero a neque ipsa nam ipsum assumenda earum eos cupiditate, optio perspiciatis sunt porro nulla quibusdam molestiae.</p>
+                <br>
+                <br>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/udVt91d6wsI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="trofeos" class="trofeos">
+            <h2>TROFEOS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quia repellendus dolorem, hic obcaecati natus consectetur quae voluptatum quibusdam consequuntur. Vitae aut animi quod alias, eos hic vero praesentium nihil, autem nemo veritatis facere, quos impedit aliquam illo incidunt. Amet tenetur soluta blanditiis numquam? Minus, laboriosam voluptas? Totam, sapiente! Excepturi vel ad eligendi asperiores magni optio dolores perferendis? Nihil, consequatur! Illum, aspernatur, repellat, sapiente corrupti harum animi tempore ut aliquam mollitia alias iure ea qui! Odiptio dolores perferendis? Nihil, consequatur! Illum, aspernatur, repellat, sapiente corrupti harum animi tempore ut aliquam mollitia alias iure ea qui! Odit, eligendi ab! Ratione deserunt excepturi sint! Sit iste non, incidunt consequuntur temporibus commodi quis, saepe nam, corporis aut rerum. Aut consequatur voluptate eligendi beatae, expedita debitis vel tenetur dolorem sunt pariatur, repellendus qui asperiores voluptatum. Perspiciatis natus quidem a accusamus laboriosam, amet ab commodi atque corrupti repellendus quod reiciendis aspernatur ex nulla eum. Doloribus, a neque quo ipsam explicabo molestiae libero aperiam eligendi tenetur t, eligendi ab! Ratione deserunt excepturi sint! Sit iste non, incidunt consequuntur temporibus commodi quis, saepe nam, corporis aut rerum. Aut consequatur voluptate eligendi beatae, expedita debitis vel tenetur dolorem sunt pariatur, repellendus qui asperiores voluptatum. Perspiciatis natus quidem a accusamus laboriosam, amet ab commodi atque corrupti repellendus quod reiciendis aspernatur ex nulla eum. Doloribus, a neque quo ipsam explicabo molestiae libero aperiam eligendi tenetur consectetur animi culpa magni sint voluptatibus, voluptatem nam expedita, dolores officiis iure. Ut quod perferendis similique, eligendi, sint commodi atque doloribus eveniet, laudantium consequatur perspiciatis! Iusto eum, vel voluptatem consequuntur tenetur beatae exercitationem, libero quia impedit adipisci consequatur perferendis, fuga sunt eos sed unde! Optio laudantium libero molestiae in porro earum magnam consequuntur illo beatae, repellat harum minus nihil eos.</p>
+        </section>
     </main>
     <footer>
-        
+
     </footer>
-    <script>
-        function enviar(){
-            alert("Enviando el formulario")
-        }
-    </script>
 </body>
 </html>

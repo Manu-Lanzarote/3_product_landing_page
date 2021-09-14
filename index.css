@@ -8,9 +8,36 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: rgba(198, 198, 255, 0.76);
+}
+
+h2{
+    text-align: center;
+    color: #C52422;
+    font-size: 30px;
+}
+
+h3{
+    color: #C52422;
+}
+
+p{
+    color: #171796;
+}
+
+hr{
+    color: #C52422;
+}
+
 header{
     position: sticky;
     top: 0;
+    background-color: #C52422;
+}
+
+[id] {
+    scroll-margin-top: 9ex;
 }
 
 .top{
@@ -24,7 +51,126 @@ header{
     padding: 10px;
 }
 
+.nav-link{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding-bottom: 5px;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid white;
+}
+
 section{
-    height: 70vh;
-    border: solid 1px rebeccapurple;
+    border-bottom: solid 1px #C52422;
+}
+
+.hero{
+    background-image: url("https://wallpaperaccess.com/full/2113279.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 50vh;
+}
+
+.hero2{
+    background-color: rgba(0, 0, 0, 0.411);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+legend{
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+.campos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20%;
+}
+
+#email{
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(253, 242, 242);
+}
+
+#submit{
+    width: 100px;
+    margin: auto;
+    padding: 7px;
+    background-color: #C52422;
+    color: white;
+    font-size: 20px;
+    border: white solid 1px;
+    border-radius: 5px;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #C52422;
+    border: #C52422 solid 1px;
+}
+
+.equipo{
+    padding: 40px 10%;
+}
+
+.jugadores{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    padding: 20px 0;
+}
+
+@media (max-width: 700px) { 
+    .jugadores{
+        grid-template-columns: 1fr 4fr;
+    }
+}
+
+i{
+    font-size: 40px;
+    color: #C52422;
+}
+
+.somos{
+background-color: #C52422;
+padding: 40px 10%;
+}
+
+.somos h2, .somos p{
+    color: white;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+iframe{
+    width: 853px;
+    height: 440px;
+}
+
+@media (max-width: 650px) { 
+    iframe{
+        height: 280px;
+    }
+}
+
+.trofeos{
+    padding: 40px 10%;
 }
