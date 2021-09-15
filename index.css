@@ -12,10 +12,15 @@ body{
     background-color: rgba(198, 198, 255, 0.76);
 }
 
+a{
+    text-decoration: none;
+}
+
 h2{
     text-align: center;
     color: #C52422;
     font-size: 30px;
+    margin: 40px 0 20px 0;
 }
 
 h3{
@@ -29,6 +34,8 @@ p{
 hr{
     color: #C52422;
 }
+
+/* ESTILOS DEL HEADER Y LA BARRA DE NAVEGACIÓN */
 
 header{
     position: sticky;
@@ -62,9 +69,7 @@ header{
     border-bottom: 2px solid white;
 }
 
-section{
-    border-bottom: solid 1px #C52422;
-}
+/* ESTILOS DEL HERO */
 
 .hero{
     background-image: url("https://wallpaperaccess.com/full/2113279.jpg");
@@ -114,6 +119,7 @@ legend{
     background-color: #C52422;
     color: white;
     font-size: 20px;
+    font-weight: bold;
     border: white solid 1px;
     border-radius: 5px;
 }
@@ -125,8 +131,10 @@ legend{
     border: #C52422 solid 1px;
 }
 
+/* ESTILOS DE LA SECCIÓN EQUIPO */
+
 .equipo{
-    padding: 40px 10%;
+    padding: 0px 10% 40px;
 }
 
 .jugadores{
@@ -146,9 +154,11 @@ i{
     color: #C52422;
 }
 
+/* ESTILOS DE LA SECCIÓN VIDEO */
+
 .somos{
 background-color: #C52422;
-padding: 40px 10%;
+padding: 20px 10% 60px;
 }
 
 .somos h2, .somos p{
@@ -171,6 +181,111 @@ iframe{
     }
 }
 
+/* ESTILOS DE LA SECCION TROFEOS */
+
+.seccion_trofeos{
+    margin: 40px 10%;
+}
+
+.contenedor_trofeos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+}
+
+@media (max-width: 1000px) { 
+    .contenedor_trofeos{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+}
+
+@media (max-width: 750px) { 
+    .contenedor_trofeos{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+}
+
+@media (max-width: 400px) { 
+    .contenedor_trofeos{
+        grid-template-columns: 1fr;
+    }
+}
+
 .trofeos{
-    padding: 40px 10%;
+    border: solid 2px #C52422;
+    margin-top: 40px;
+}
+
+.trofeos h3, .trofeos p{
+    text-align: center;
+    color: #111;
+}
+
+.trofeos h3{
+    color: white;
+    background-color: #C52422;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.subtitulo{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.boton_trofeos{
+    display: block;
+    margin: 10px auto;
+    padding: 7px;
+    width: 100px;
+    background-color: #C52422;
+    color: white;
+    border: white solid 1px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boton_trofeos:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #C52422;
+    border: #C52422 solid 1px;
+}
+
+.imagen_trofeos{
+    max-width: 100vw;
+}
+
+.img_trof{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ESTILOS DEL FOOTER */
+
+footer{
+    background-color: #C52422;
+    color: white;
+    padding: 30px 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.enlaces_footer {
+    display: inline;
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.enlaces_footer:hover{
+    color: pink;
+}
+
+.copy{
+    margin-top: 10px;
+    color: pink;
 }
